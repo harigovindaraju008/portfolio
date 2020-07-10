@@ -2,7 +2,7 @@
 
 .projects {
   height: 100vh;
-  widows: 100%;
+  width: 100%;
 }
 
 .project--heading {
@@ -162,3 +162,6 @@
     align-items: center;
     background-color: #191919;
   } */
+
+@media only screen and (max-width: 649px) {
+}

@@ -10,9 +10,10 @@ function App() {
     <div className="container">
       {/* <Welcome /> */}
       <About />
-      {/* <Projects />
-      <ContactMe />
-      <Footer /> */}
+      {/* <Projects /> */}
+      {/*
+      <ContactMe /> */}
+      <Footer />
     </div>
   );
 }
