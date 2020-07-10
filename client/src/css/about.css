@@ -1,0 +1,146 @@
+/*
+
+.skills {
+  display: flex;
+}
+
+.skills_circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: relative;
+  background-color: white;
+}
+
+.skills_circle img {
+  object-fit: cover;
+  height: auto;
+  width: 80px;
+} */
+
+/* about css */
+.about {
+  margin: 2rem 5rem;
+  color: #000000;
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+.about--heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about--primary {
+  font-size: 5rem;
+}
+
+.about--sub {
+  font-size: 2rem;
+  margin: 3rem 0;
+  text-align: justify;
+}
+
+.about--skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about--image img {
+  height: auto;
+  max-width: 100%;
+}
+
+.about--skills__catagory {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 0 4rem;
+  color: #fafafa;
+}
+
+.skill {
+  position: relative;
+  height: 3rem;
+  width: 100%;
+  background-color: #f4f4f4;
+  border: 1px solid #0000003d;
+}
+
+.skill--box {
+  top: 0;
+  background-color: #382f2fa2;
+  height: 100%;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.skill--title {
+  font-size: 1rem;
+}
+
+.html {
+  background-color: #ff4d4d;
+  height: 100%;
+  width: 80%;
+  animation: forward 2000ms 300ms forwards;
+}
+
+.js {
+  background-color: #f3db1d;
+  height: 100%;
+  width: 70%;
+  animation: forward 2000ms 300ms forwards;
+}
+
+.reactjs {
+  background-color: #00d8fe;
+  height: 100%;
+  width: 90%;
+  animation: forward 2000ms 300ms forwards;
+}
+
+.nextjs {
+  background-color: #636363;
+  height: 100%;
+  width: 80%;
+  animation: forward 2000ms 300ms forwards;
+}
+
+.reduxjs {
+  background-color: #7e43c3;
+  height: 100%;
+  width: 90%;
+  animation: forward 2000ms 300ms forwards;
+}
+
+.flutter {
+  background-color: #00d1ff;
+  height: 100%;
+  width: 50%;
+  animation: forward 2000ms 300ms forwards;
+}
+
+@keyframes forward {
+  0% {
+    width: 0;
+  }
+}
+
+@media only screen and (max-width: 649px) {
+  .about--sub {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .about--skills {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

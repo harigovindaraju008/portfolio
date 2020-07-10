@@ -1,6 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./css/styles.css";
+import "./css/welcome.css";
+import "./css/footer.css";
+import "./css/contact.css";
+import "./css/project.css";
+import "./css/about.css";
 import App from "./components/App";
 import * as serviceWorker from "./serviceWorker";
 
