@@ -6,22 +6,22 @@ export default function Footer() {
       <p>CONNECT WITH ME</p>
       <div className="social-links">
         <span>
-          <a href="https://www.linkedin.com/in/bradleyengelhardt">
+          <a href="https://www.linkedin.com/in/hariharan20121999/">
             <i className="fa fa-linkedin fa-3x"></i>
           </a>
         </span>
         <span>
-          <a href="https://twitter.com/bradengelhardt">
+          <a href="https://twitter.com/crazyharan">
             <i className="fa fa-twitter fa-3x"></i>
           </a>
         </span>
         <span>
-          <a href="https://github.com/SquishyAndroid">
+          <a href="https://github.com/harigovindaraju">
             <i className="fa fa-github fa-3x"></i>
           </a>
         </span>
         <span>
-          <a href="https://codepen.io/SquishyAndroid/pens/public/">
+          <a href="https://codepen.io/hari_govindaraju">
             <i className="fa fa-codepen fa-3x"></i>
           </a>
         </span>
