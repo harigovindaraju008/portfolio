@@ -18,9 +18,7 @@ export default function Projects() {
   return (
     <div className="projects">
       <div className="project--heading">My Projects</div>
-      <div className="sideshow-container">
-        <Sideshow imgs={images} />
-      </div>
+      <Sideshow imgs={images} />
     </div>
   );
 }

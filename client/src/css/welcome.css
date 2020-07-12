@@ -281,4 +281,8 @@
   .profile_pic img {
     max-width: 300px;
   }
+
+  .welcomePage::after {
+    opacity: 0;
+  }
 }
