@@ -1,6 +1,6 @@
 /* footer */
 
-.footer {
+/* .footer {
   background-color: #000;
   height: 20vh;
   width: 100%;
@@ -16,10 +16,17 @@
   color: white;
   font-weight: bold;
   font-size: 16px;
+} */
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
 
 .social-links a {
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 0px 5px 0px 5px;
 }
 
@@ -33,6 +40,7 @@
 }
 
 @media only screen and (max-width: 649px) {
-  .footer {
+  .social-links {
+    display: none;
   }
 }

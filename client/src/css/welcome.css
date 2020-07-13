@@ -6,9 +6,12 @@
   background-size: cover;
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   margin: 0 auto;
   z-index: 1;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .welcomePage::before {
@@ -20,7 +23,7 @@
   background-size: cover;
   background-position: top;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   z-index: -1;
   /* opacity: 0; */
   animation-duration: 100s;
@@ -46,7 +49,7 @@
   content: "";
   position: absolute;
   width: 100%;
-  min-height: 30vh;
+  height: 30%;
   bottom: -10px;
   left: 0;
   background-image: url("/images/wavy.png");
@@ -173,6 +176,7 @@
   width: 30rem;
   margin: 2rem;
   border-radius: 1rem;
+  overflow: hidden;
   background-color: #3bafda;
   cursor: pointer;
   text-decoration: none;
@@ -259,16 +263,24 @@
 }
 
 @media only screen and (max-width: 649px) {
+  .welcomePage {
+  }
+
   .logo {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .right,
   .left {
-    font-size: 6rem;
+    font-size: 5rem;
+  }
+
+  .text {
+    font-size: 1.5rem;
   }
 
   .rapper {
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.4fr;
     grid-auto-flow: dense;
   }
   .rapper div:nth-of-type(1) {
@@ -279,7 +291,7 @@
   }
 
   .profile_pic img {
-    max-width: 300px;
+    max-width: 250px;
   }
 
   .welcomePage::after {

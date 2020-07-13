@@ -28,19 +28,6 @@ export default function Welcome() {
           <img src="images/hari.jpg" alt="err" />
         </div>
       </div>
-
-      {/*
-      <div className="skills">
-        <div className="skills_circle">
-          <img src="images/skills/mongodb.png" alt="" />
-        </div>
-        <div className="skills_circle">
-          <img src="images/skills/nodejs.png" alt="" />
-        </div>
-        <div className="skills_circle">
-          <img src="images/skills/reactjs.png" alt="" />
-        </div>
-      </div> */}
     </div>
   );
 }
