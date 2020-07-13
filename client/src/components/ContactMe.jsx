@@ -9,7 +9,7 @@ export default function ContactMe() {
   const [message, setmessage] = useState(
     " Contact page which looks like a Hand written Letter. You can go ahead and change the contents in the Text boxes to change the content in the Letter."
   );
-  const [email, setemail] = useState("harigovindaraju008@gmail.com.com");
+  const [email, setemail] = useState("harigovindaraju008@gmail.com");
 
   return (
     <div className="contact" id="contact">
@@ -102,30 +102,30 @@ export default function ContactMe() {
           </div>
         </div>
 
-        <div className="contact--letter">
-          <div className="paper">
-            <div className="lines">
-              <div className="Lettertext" spellCheck="false">
-                Hello Curious Cat, <br />
-                <br />
-                This is {firstName + " " + lastName}. I am from {place}.
-                <br />
-                <br />I am a {profession}, working as a {company}.
-                <br />
-                <br />
-                {message}
-                <br />
-                <br />
-                Like my Work? Share your Love, gimme a heart
-                &#9829;&#9829;&#9829; <br />
-                You can reach me back on {email}.
-                <br />
-                <br />
-                Thanks and Regards,<p>{firstName + " " + lastName}</p>
-              </div>
+        {/* <div className="contact--letter"> */}
+        <div className="paper">
+          <div className="lines">
+            <div className="Lettertext" spellCheck="false">
+              Hello Curious Cat, <br />
+              <br />
+              This is {firstName + " " + lastName}. I am from {place}.
+              <br />
+              <br />I am a {profession}, working as a {company}.
+              <br />
+              <br />
+              {message}
+              <br />
+              <br />
+              Like my Work? Share your Love, gimme a heart &#9829;&#9829;&#9829;{" "}
+              <br />
+              You can reach me back on {email}.
+              <br />
+              <br />
+              Thanks and Regards,<p>{firstName + " " + lastName}</p>
             </div>
           </div>
         </div>
+        {/* </div> */}
       </div>
     </div>
   );

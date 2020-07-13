@@ -1,5 +1,5 @@
 .navbar {
-  z-index: 5;
+  z-index: 10;
   height: 100%;
   width: 40px;
   position: fixed;
@@ -13,15 +13,20 @@
 }
 
 .navbar > div:nth-child(1) {
-  background-color: tomato;
+  background-color: #3bafda;
 }
 
 .navbar svg {
   color: #202736;
 }
 
-.navbar span:nth-child(1) {
-  color: #202736;
+.navbar svg:hover {
+  color: #ffffff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-collection {
@@ -37,6 +42,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
+}
+
+.nav-logo > span {
   margin-top: 1rem;
 }
 
@@ -61,7 +69,18 @@
   }
 
   .nav-logo {
-    margin-top: unset;
     align-items: center;
+  }
+
+  .nav-logo > span {
+    margin-top: unset;
+  }
+
+  .nav-logo svg {
+    color: #ffffff !important;
+  }
+
+  .navbar > div:nth-child(1) {
+    background-color: black;
   }
 }
