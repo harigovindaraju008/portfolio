@@ -1,11 +1,19 @@
 .navbar {
+  z-index: 5;
   height: 100%;
-  width: 100%;
+  width: 40px;
+  position: fixed;
+  left: 0;
+  bottom: 0rem;
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 0.5fr;
-  grid-template-columns: 1fr;
+  grid-template-columns: 40px;
   gap: 10rem;
   background-color: #3bafda;
+}
+
+.navbar > div:nth-child(1) {
+  background-color: tomato;
 }
 
 .navbar svg {
@@ -34,8 +42,12 @@
 
 @media only screen and (max-width: 649px) {
   .navbar {
-    grid-template-rows: 1fr;
-    grid-template-columns: 0.2fr 1fr;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    grid-template-rows: 100%;
+    grid-template-columns: 0.3fr 1fr;
     gap: 0rem;
   }
 
