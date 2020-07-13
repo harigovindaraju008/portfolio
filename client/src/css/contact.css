@@ -2,6 +2,7 @@
 
 .contact {
   overflow-x: hidden;
+  width: 100vw;
 }
 
 .contact--heading {
