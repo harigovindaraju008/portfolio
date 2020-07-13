@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  /* overflow: hidden; */
 }
 html,
 body {
@@ -19,7 +19,7 @@ body {
   background: #ffffff;
   font-size: 62.5%;
   font-family: "Raleway";
-  position: relative;
+  /* position: relative; */
 }
 
 .body-rapper {
