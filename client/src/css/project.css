@@ -92,7 +92,7 @@
   align-items: center;
   top: 90%;
   left: 0;
-  z-index: 20;
+  z-index: 3;
   width: 100%;
   opacity: 0;
   transition: all 0.5s;
