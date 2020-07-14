@@ -1,4 +1,6 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import { motion } from "framer-motion";
 
 export default function Welcome() {
@@ -31,7 +33,13 @@ export default function Welcome() {
           </a>
         </div>
         <div className="profile_pic">
-          <img src="images/hari.jpg" alt="err" />
+          <LazyLoadImage
+            src="images/hari.jpg"
+            alt="hari govindaraju"
+            effect="blur"
+            delayTime={7000}
+          />
+          {/* <img src="images/hari.jpg" alt="err" /> */}
         </div>
       </div>
     </motion.div>
