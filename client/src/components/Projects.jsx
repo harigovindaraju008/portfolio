@@ -1,7 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import Preloader from "./Preloader";
 import Sideshow from "./Sideshow";
 
 export default function Projects() {
+  useEffect(() => {
+    setTimeout(() => {
+      setloader(false);
+    }, 1000);
+  }, []);
+
+  const [loader, setloader] = useState(true);
   const images = [
     // "https://yeehaw.s3.amazonaws.com/space/pexels-photo-1274260.jpeg",
     // "https://yeehaw.s3.amazonaws.com/space/pexels-photo-1624438.jpeg",
@@ -15,7 +23,9 @@ export default function Projects() {
     images.forEach((src) => (new Image().src = src));
   }, []);
 
-  return (
+  return loader ? (
+    <Preloader />
+  ) : (
     <div className="projects">
       <div className="project--heading">My Projects</div>
       <Sideshow imgs={images} />

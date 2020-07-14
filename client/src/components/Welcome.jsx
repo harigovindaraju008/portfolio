@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { motion } from "framer-motion";
+import Preloader from "./Preloader";
 
 export default function Welcome() {
-  const spring = {
-    type: "spring",
-    damping: 10,
-    stiffness: 100,
-  };
-  return (
-    <motion.div layoutTransition={spring} className="welcomePage">
+  useEffect(() => {
+    setTimeout(() => {
+      setloader(false);
+    }, 1000);
+  }, []);
+
+  const [loader, setloader] = useState(true);
+  return loader ? (
+    <Preloader />
+  ) : (
+    <motion.div animate={{ stdDeviation: [0, 5, 0] }} className="welcomePage">
       <div className="logo">
         <span className="left">{"<"}</span>HARIHARAN
         <span className="right">{"/>"}</span>
@@ -21,14 +26,18 @@ export default function Welcome() {
       </div>
       <div className="rapper">
         <div className="btn-group">
-          <a
-            className="btn btn--animated"
-            href="./resume/hariharan.pdf"
-            download
-          >
+          <a className="neon btn btn--animated" href="./resume/hariharan.pdf">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
             Resume
           </a>
-          <a className="btn btn--animated" href="#contact">
+          <a className="neon btn btn--animated" href="#contact">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
             Get touch
           </a>
         </div>

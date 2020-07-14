@@ -1,6 +1,13 @@
-import React, { useState } from "react";
-
+import React, { useEffect, useState } from "react";
+import Preloader from "./Preloader";
 export default function ContactMe() {
+  useEffect(() => {
+    setTimeout(() => {
+      setloader(false);
+    }, 1000);
+  }, []);
+
+  const [loader, setloader] = useState(true);
   const [firstName, setfirstName] = useState("Hariharan");
   const [lastName, setlastName] = useState("govindaraju");
   const [place, setplace] = useState("India");
@@ -11,7 +18,9 @@ export default function ContactMe() {
   );
   const [email, setemail] = useState("harigovindaraju008@gmail.com");
 
-  return (
+  return loader ? (
+    <Preloader />
+  ) : (
     <div className="contact" id="contact">
       <div className="contact--heading">
         <span>Contact Me</span>

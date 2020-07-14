@@ -7,6 +7,7 @@ import "./css/contact.css";
 import "./css/project.css";
 import "./css/about.css";
 import "./css/navbar.css";
+import "./css/preloaded.css";
 import App from "./components/App";
 import * as serviceWorker from "./serviceWorker";
 

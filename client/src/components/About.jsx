@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Preloader from "./Preloader";
 
 export default function About() {
-  return (
+  useEffect(() => {
+    setTimeout(() => {
+      setloader(false);
+    }, 1000);
+  }, []);
+
+  const [loader, setloader] = useState(true);
+  return loader ? (
+    <Preloader />
+  ) : (
     <div className="about">
       <div className="about--heading">
         <div className="about--primary">About</div>
