@@ -1,8 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Welcome() {
+  const spring = {
+    type: "spring",
+    damping: 10,
+    stiffness: 100,
+  };
   return (
-    <div className="welcomePage">
+    <motion.div layoutTransition={spring} className="welcomePage">
       <div className="logo">
         <span className="left">{"<"}</span>HARIHARAN
         <span className="right">{"/>"}</span>
@@ -28,6 +34,6 @@ export default function Welcome() {
           <img src="images/hari.jpg" alt="err" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

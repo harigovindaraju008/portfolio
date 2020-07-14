@@ -18,6 +18,31 @@ export default function ContactMe() {
       </div>
 
       <div className="contact--container">
+        {/* <div className="contact--letter"> */}
+        <div className="paper">
+          <div className="lines">
+            <div className="Lettertext" spellCheck="false">
+              Hello Curious Cat, <br />
+              <br />
+              This is {firstName + " " + lastName}. I am from {place}.
+              <br />
+              <br />I am a {profession}, working as a {company}.
+              <br />
+              <br />
+              {message}
+              <br />
+              <br />
+              Like my Work? Share your Love, gimme a heart &#9829;&#9829;&#9829;{" "}
+              <br />
+              You can reach me back on {email}.
+              <br />
+              <br />
+              Thanks and Regards,<p>{firstName + " " + lastName}</p>
+            </div>
+          </div>
+        </div>
+        {/* </div> */}
+
         <div className="contact--form">
           <div className="contact--form--primary">
             <div>
@@ -101,31 +126,6 @@ export default function ContactMe() {
             </div>
           </div>
         </div>
-
-        {/* <div className="contact--letter"> */}
-        <div className="paper">
-          <div className="lines">
-            <div className="Lettertext" spellCheck="false">
-              Hello Curious Cat, <br />
-              <br />
-              This is {firstName + " " + lastName}. I am from {place}.
-              <br />
-              <br />I am a {profession}, working as a {company}.
-              <br />
-              <br />
-              {message}
-              <br />
-              <br />
-              Like my Work? Share your Love, gimme a heart &#9829;&#9829;&#9829;{" "}
-              <br />
-              You can reach me back on {email}.
-              <br />
-              <br />
-              Thanks and Regards,<p>{firstName + " " + lastName}</p>
-            </div>
-          </div>
-        </div>
-        {/* </div> */}
       </div>
     </div>
   );

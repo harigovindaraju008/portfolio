@@ -161,6 +161,6 @@
 
 @media only screen and (max-width: 649px) {
   .projects {
-    height: 50vh;
+    height: 100vh;
   }
 }
