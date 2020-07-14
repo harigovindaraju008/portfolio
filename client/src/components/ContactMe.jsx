@@ -18,7 +18,6 @@ export default function ContactMe() {
       </div>
 
       <div className="contact--container">
-        {/* <div className="contact--letter"> */}
         <div className="paper">
           <div className="lines">
             <div className="Lettertext" spellCheck="false">
@@ -41,87 +40,88 @@ export default function ContactMe() {
             </div>
           </div>
         </div>
-        {/* </div> */}
 
-        <div className="contact--form">
-          <div className="contact--form--primary">
-            <div>
-              <label htmlFor="firstName">First Name:</label>
-              <input
-                type="text"
-                id="firstName"
-                required
-                onChange={({ target }) => setfirstName(target.value)}
-                placeholder={firstName}
-              />
-            </div>
-            <div>
-              <label htmlFor="lastName">Last Name:</label>
-              <input
-                type="text"
-                id="lastName"
-                required
-                onChange={({ target }) => setlastName(target.value)}
-                placeholder={lastName}
-              />
-            </div>
-            <div>
-              <label htmlFor="email">Email ID:</label>
-              <input
-                type="email"
-                id="email"
-                required
-                onChange={({ target }) => setemail(target.value)}
-                placeholder={email}
-              />
-            </div>
-            <div>
-              <label htmlFor="place">Country:</label>
-              <input
-                type="text"
-                id="place"
-                required
-                onChange={({ target }) => setplace(target.value)}
-                placeholder={place}
-              />
-            </div>
-            <div>
-              <label htmlFor="company">Company:</label>
-              <input
-                type="text"
-                placeholder={company}
-                id="company"
-                required
-                onChange={({ target }) => setcompany(target.value)}
-              />
-            </div>
-            <div>
-              <label htmlFor="profession">Profession:</label>
-              <input
-                type="text"
-                placeholder={profession}
-                id="profession"
-                required
-                onChange={({ target }) => setprofession(target.value)}
-              />
-            </div>
-          </div>
-
-          <div className="contact--form--second">
-            <div>
-              <div className="message">
-                <label htmlFor="message">Message:</label>
-                <textarea
-                  rows="5"
-                  id="message"
-                  placeholder={message}
-                  onChange={({ target }) => setmessage(target.value)}
-                ></textarea>
+        <div className="form">
+          <div className="contact--form">
+            <div className="contact--form--primary">
+              <div>
+                <label htmlFor="firstName">First Name:</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  required
+                  onChange={({ target }) => setfirstName(target.value)}
+                  placeholder={firstName}
+                />
               </div>
               <div>
-                <button type="button" className="">
-                  Send Response
-                </button>
+                <label htmlFor="lastName">Last Name:</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  required
+                  onChange={({ target }) => setlastName(target.value)}
+                  placeholder={lastName}
+                />
+              </div>
+              <div>
+                <label htmlFor="email">Email ID:</label>
+                <input
+                  type="email"
+                  id="email"
+                  required
+                  onChange={({ target }) => setemail(target.value)}
+                  placeholder={email}
+                />
+              </div>
+              <div>
+                <label htmlFor="place">Country:</label>
+                <input
+                  type="text"
+                  id="place"
+                  required
+                  onChange={({ target }) => setplace(target.value)}
+                  placeholder={place}
+                />
+              </div>
+              <div>
+                <label htmlFor="company">Company:</label>
+                <input
+                  type="text"
+                  placeholder={company}
+                  id="company"
+                  required
+                  onChange={({ target }) => setcompany(target.value)}
+                />
+              </div>
+              <div>
+                <label htmlFor="profession">Profession:</label>
+                <input
+                  type="text"
+                  placeholder={profession}
+                  id="profession"
+                  required
+                  onChange={({ target }) => setprofession(target.value)}
+                />
+              </div>
+            </div>
+
+            <div className="contact--form--second">
+              <div>
+                <div className="message">
+                  <label htmlFor="message">Message:</label>
+                  <textarea
+                    rows="5"
+                    id="message"
+                    placeholder={message}
+                    onChange={({ target }) => setmessage(target.value)}
+                  ></textarea>
+                </div>
+                <div>
+                  <button type="button" className="">
+                    Send Response
+                  </button>
+                </div>
               </div>
             </div>
           </div>
