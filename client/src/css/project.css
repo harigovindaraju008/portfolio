@@ -1,15 +1,16 @@
 /* projects css */
 
 .projects {
-  height: 90vh;
+  height: 100vh;
   widows: 100%;
   display: grid;
   gap: 2rem;
   grid-template-rows: 0.1fr 1fr;
+  background-color: #000000;
 }
 
 .project--heading {
-  color: #000000;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +38,7 @@
   height: 100%;
   overflow: hidden;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   position: absolute;
@@ -47,7 +48,7 @@
 
 .slideImg {
   width: 90%;
-  max-height: 90%;
+  max-height: 100vh;
   border-radius: 2rem;
 }
 
@@ -66,7 +67,7 @@
   font-size: 4rem;
   line-height: 0;
   cursor: pointer;
-  color: #080101cc;
+  color: #ffffff;
   transition: all 0.5s;
   z-index: 20;
 }
@@ -162,5 +163,11 @@
 @media only screen and (max-width: 649px) {
   .projects {
     height: 100vh;
+  }
+
+  .slideImg {
+    width: 90%;
+    max-height: 90vh;
+    border-radius: 2rem;
   }
 }
