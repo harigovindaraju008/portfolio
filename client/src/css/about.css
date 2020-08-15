@@ -7,6 +7,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* background-image: url("/images/about-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
   z-index: 2;
 }
 
@@ -38,6 +42,9 @@
 }
 
 .about--skills__catagory {
+  /* position: relative;
+  top: 10rem;
+  left: -20rem; */
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -49,13 +56,14 @@
   position: relative;
   height: 3rem;
   width: 100%;
-  background-color: #f4f4f4;
+  background-color: #f1e5e5;
   border: 1px solid #0000003d;
+  border: 5px;
 }
 
 .skill--box {
   top: 0;
-  background-color: #382f2fa2;
+  background-color: #382f2ffb;
   height: 100%;
   width: 6rem;
   display: flex;
@@ -69,42 +77,78 @@
 }
 
 .html {
-  background-color: #ff4d4d;
+  background: rgb(74, 160, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(74, 160, 217, 1) 0%,
+    rgba(93, 130, 193, 1) 32%,
+    rgba(140, 100, 167, 1) 100%
+  );
   height: 100%;
   width: 80%;
   animation: forward 2000ms 300ms forwards;
 }
 
 .js {
-  background-color: #f3db1d;
+  background: rgb(74, 160, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(74, 160, 217, 1) 0%,
+    rgba(93, 130, 193, 1) 32%,
+    rgba(140, 100, 167, 1) 100%
+  );
   height: 100%;
   width: 70%;
   animation: forward 2000ms 300ms forwards;
 }
 
 .reactjs {
-  background-color: #00d8fe;
+  background: rgb(74, 160, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(74, 160, 217, 1) 0%,
+    rgba(93, 130, 193, 1) 32%,
+    rgba(140, 100, 167, 1) 100%
+  );
   height: 100%;
   width: 90%;
   animation: forward 2000ms 300ms forwards;
 }
 
 .nextjs {
-  background-color: #636363;
+  background: rgb(74, 160, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(74, 160, 217, 1) 0%,
+    rgba(93, 130, 193, 1) 32%,
+    rgba(140, 100, 167, 1) 100%
+  );
   height: 100%;
   width: 80%;
   animation: forward 2000ms 300ms forwards;
 }
 
 .reduxjs {
-  background-color: #7e43c3;
+  background: rgb(74, 160, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(74, 160, 217, 1) 0%,
+    rgba(93, 130, 193, 1) 32%,
+    rgba(140, 100, 167, 1) 100%
+  );
   height: 100%;
   width: 90%;
   animation: forward 2000ms 300ms forwards;
 }
 
 .flutter {
-  background-color: #00d1ff;
+  background: rgb(74, 160, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(74, 160, 217, 1) 0%,
+    rgba(93, 130, 193, 1) 32%,
+    rgba(140, 100, 167, 1) 100%
+  );
   height: 100%;
   width: 50%;
   animation: forward 2000ms 300ms forwards;

@@ -3,6 +3,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { motion } from "framer-motion";
 import Preloader from "./Preloader";
+import { Link } from "react-router-dom";
 
 export default function Welcome() {
   useEffect(() => {
@@ -26,6 +27,13 @@ export default function Welcome() {
       </div>
       <div className="rapper">
         <div className="btn-group">
+          <Link className="neon btn btn--animated" to="/about">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Welcome Me
+          </Link>
           <a className="neon btn btn--animated" href="./resume/hariharan.pdf">
             <span></span>
             <span></span>
@@ -33,13 +41,13 @@ export default function Welcome() {
             <span></span>
             Resume
           </a>
-          <a className="neon btn btn--animated" href="#contact">
+          <Link className="neon btn btn--animated" to="/contact">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             Get touch
-          </a>
+          </Link>
         </div>
         <div className="profile_pic">
           <LazyLoadImage
